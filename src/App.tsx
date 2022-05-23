@@ -1,43 +1,11 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
+    <div className="bg-gray-900 h-screen flex justify-center items-center flex-col"> 
+      <h1 className="text-3xl font-bold text-white">Hello Dev 👋</h1>
+      <p className="max-w-md text-center mt-6 text-gray-400 font-normal">
+        This template was created to facilitate the development process.
+        <a href="https://rafaelpereira.dev" target="_blank" className="text-green-500 underline inline-flex ml-1">Created by Rafael Pereira</a>
+      </p>
     </div>
   )
 }
